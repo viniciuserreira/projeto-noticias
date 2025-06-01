@@ -119,16 +119,17 @@
 
         .primeira-secao button {
                 padding: 0.75rem 2rem;
-                line-height: 1.625rem;
-                margin-bottom: 1.5rem;
                 background-color:var(--vermilion);
                 border: none;
                 text-transform: uppercase;
-                color:var(--almost-white);
+                color: var(--almost-white);
                 font-weight:700;
                 font-size: 0.875rem;
                 letter-spacing: 0.275rem;
-                line-height: 0.275
+                line-height: 1.5rem;
+                /*Retirado daqui pois era o que etava deixando o botão errado.
+                line-height: 1.625rem;
+                margin-bottom: 1.5rem;*/
             }
 
         .segunda-secao {
