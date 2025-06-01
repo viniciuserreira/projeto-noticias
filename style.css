@@ -19,6 +19,16 @@
             padding: 1.75rem 1rem;
             background-color: var(--almost-white);
         }
+
+        body.menu-open::before {
+            content: "";
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(0, 0, 26, 0.5);
+            top: 0;
+            left: 0;
+        }
         
         .header-mobile {
             display: flex;
@@ -30,7 +40,36 @@
         .header-mobile button {
             border: none;
             background: none;
+
+            width: fit-content;
             }
+
+        .header-mobile nav {
+            position: fixed;
+            background-color: var(--almost-white);
+            right: 0;
+            top: 0;
+            height: 100vh;
+            width: 16rem;
+            z-index: 999;
+
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            gap: 1.5rem;
+        }
+
+        .header-mobile nav button {
+            align-self: flex-end;
+            margin-bottom: 4rem;
+        }
+
+        .header-mobile nav a {
+            text-decoration: none;
+            color: var(--dark-blue);
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+        }
 
         .primeira-secao {
                 margin-bottom: 4rem;
@@ -102,24 +141,24 @@
                 line-height: 1.625rem;
             }
         
-            .terceira-secao > div {
+        .terceira-secao > div {
                 display: flex;
                 align-items: center;
                 gap: 1.5rem;
                 margin-bottom: 2rem;
               }
               
-            .terceira-secao img {
+        .terceira-secao img {
                 max-width: 6.25rem;
               }
               
-            .terceira-secao strong {
+        .terceira-secao strong {
                 color: var(--silver);
                 font-size: 2rem;
                 line-height: 100%;
               }
 
-            .terceira-secao h2 {
+        .terceira-secao h2 {
                 color: var(--dark-blue);
                 font-size: 1.125rem;
                 font-weight: 800;
@@ -127,7 +166,7 @@
                 margin-block: 0.6rem;
               }
               
-            .terceira-secao p {
+        .terceira-secao p {
                 font-size: 0.9375rem;
                 line-height: 1.625rem;
                 color: var(--gunmetal);
